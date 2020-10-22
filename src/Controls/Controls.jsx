@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Controls = ({
   text,
   onChange,
-  onSubmit
+  onClick
 }) => (
     <>
       <label htmlFor="text"></label>
@@ -25,7 +25,7 @@ const Controls = ({
         onChange={onChange}
       />
 
-      <button onSubmit={onSubmit}>
+      <button onClick={onClick}>
         Send
       </button>
 
@@ -55,7 +55,7 @@ const Controls = ({
 Controls.propTypes = {
   text: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired
 };
 
 export default Controls;
